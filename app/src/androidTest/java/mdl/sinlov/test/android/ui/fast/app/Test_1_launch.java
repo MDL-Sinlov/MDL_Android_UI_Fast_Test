@@ -40,28 +40,22 @@ public class Test_1_launch extends MDLTestSet {
         ThirdTestJob t = new ThirdTestJob() {
             @Override
             public boolean childTaskBefore() {
-                MainActivity activity = (MainActivity) myActivity();
-                activity.showToast("child TaskBefore");
                 mySolo().sleep(3000);
                 return false;
             }
 
             @Override
             public boolean childTaskRunning() {
-                MainActivity activity = (MainActivity) myActivity();
-                activity.showToast("child TaskRunning");
                 mySolo().sleep(3000);
                 return false;
             }
 
             @Override
             public boolean childTaskAfter() {
-                MainActivity activity = (MainActivity) myActivity();
-                activity.showToast("child TaskAfter");
                 mySolo().sleep(3000);
                 return false;
             }
         };
-        fastTest(t);
+        fastTestAutoCount(t);
     }
 }
