@@ -24,11 +24,11 @@ copy files at [this path](app/src/androidTest/java)
                 └── ui
                     └── fast
                         ├── FastTest.java
-                        ├── MDLTestCont.java
+                        ├── MDLTestCont.java        // launch setting here
                         ├── MDLTestSet.java
                         ├── ThirdTestJob.java
                         └── app
-                            └── Test_1_launch.java // test case at here
+                            └── Test_1_launch.java  // test case at here
 
 7 directories, 5 files
 ```
